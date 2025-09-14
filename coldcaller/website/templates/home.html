@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block title %}Home - omshiva digital Agency{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Grow Your Business with OmShiva Digital Agency</h1>
+        <p>Grow your business with OmShiva Digital Agency – specializing in SEO, SMM, Digital Marketing, Graphic Design,
+            and Cold Caller solutions.</p>
+        <a href="{% url 'services' %}" class="btn">Explore Our Services</a>
+    </div>
+</section>
+
+<!-- Services / Features Section -->
+<h2 class="serv-head">Our Services</h2>
+<div class="services-container">
+    <div class="service-card animate">
+        <div class="service-icon seo">
+            <i class="fas fa-search"></i>
+        </div>
+        <h2>SEO Services</h2>
+        <span class="tagline">Rank Higher. Reach More.</span>
+        <p>Improve your website's ranking on search engines, attract more organic traffic, and increase your brand
+            visibility with our tailored SEO strategies.</p>
+    </div>
+
+    <div class="service-card animate">
+        <div class="service-icon ai">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h2>AI-Powered Lead Generation</h2>
+        <span class="tagline">Smarter Outreach. Better Leads.</span>
+        <p>Automate outreach and generate quality leads efficiently with our AI-powered tools, saving time and
+            increasing conversions.</p>
+    </div>
+
+    <div class="service-card animate">
+        <div class="service-icon design">
+            <i class="fas fa-paint-brush"></i>
+        </div>
+        <h2>Graphic Design</h2>
+        <span class="tagline">Designs That Speak.</span>
+        <p>Create eye-catching visuals, logos, banners, and promotional materials that reflect your brand identity and
+            engage your audience.</p>
+    </div>
+
+    <div class="service-card animate">
+        <div class="service-icon smm">
+            <i class="fas fa-share-alt"></i>
+        </div>
+        <h2>Social Media Marketing (SMM)</h2>
+        <span class="tagline">Engage. Influence. Grow.</span>
+        <p>Grow your social media presence, engage your audience, and drive traffic and sales with customized social
+            media campaigns across platforms.</p>
+    </div>
+</div>
+
+<!--why choose us-->
+<section class="why-choose-us">
+    <h2 class="choose-head">Why Choose Us</h2>
+    <p class="choose-intro">
+        At OmShiva Digital Agency, we don’t just provide services — we partner with you to
+        achieve measurable growth. Here’s why businesses love working with us:
+    </p>
+
+    <div class="choose-container">
+        <div class="choose-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Creative & Innovative</h3>
+            <p>We blend creativity with data-driven strategies to craft unique solutions that set your brand apart.</p>
+        </div>
+
+        <div class="choose-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Results-Driven</h3>
+            <p>Our focus is not just on clicks, but on conversions, sales, and long-term growth.</p>
+        </div>
+
+        <div class="choose-card">
+            <i class="fas fa-users"></i>
+            <h3>Client-Centric Approach</h3>
+            <p>We take time to understand your business goals and design strategies tailored to your needs.</p>
+        </div>
+
+        <div class="choose-card">
+            <i class="fas fa-headset"></i>
+            <h3>Dedicated Support</h3>
+            <p>From strategy to execution, our team is always available to guide you at every step.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="about-home">
+    <h2>About Us</h2>
+    <p>
+        At OmShiva Digital Agency, we are passionate about helping businesses thrive in the digital age. With expertise
+        in SEO, AI-driven outreach, graphic design, and social media marketing, our mission is to empower small and
+        medium-sized businesses to scale faster and smarter.
+    </p>
+    <p>
+        We believe every brand has a story to tell — and our job is to make sure it’s heard. By combining data-driven
+        strategies with creative solutions, we deliver digital experiences that not only attract but also convert. From
+        boosting your online visibility to building meaningful customer engagement, we’re here to ensure your business
+        stands out in today’s competitive landscape.
+    </p>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote>
+        "Coldcaller Agency transformed our lead generation. Their AI cold caller booked us more meetings
+        than we ever thought possible!"
+        <cite>- Sagar A, Ganesha Digital Agency</cite>
+    </blockquote>
+    <blockquote>
+        "Working with Omshiva Digital Agency was the best decision for our channel. With their Social Media Marketing
+        strategies, we achieved YouTube monetization in just 3 months and 15 days. Our subscribers grew steadily, watch
+        hours increased, and the overall engagement was beyond expectations. We are grateful for their support in making
+        our dream a reality." — BaladevTales
+        <cite>- Ashok K, Channel Admin</cite>
+    </blockquote>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+    <h2>Ready to Grow Your Business?</h2>
+    <p>Let us help you attract more clients and close more deals with our powerful solutions.</p>
+    <a href="{% url 'contact' %}" class="btn">Get in Touch</a>
+</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+{% endblock %}

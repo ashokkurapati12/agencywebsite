@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Top SEO, SMM, Digital Marketing & Graphic Design | OmShiva">
+  <meta name="description" content="OmShiva Digital Agency provides expert SEO, SMM, Digital Marketing, Graphic Design, and AI-powered Cold Caller Agent services to grow your business online.">
+  <title>{% block title %}Coldcaller Website{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/services.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-circle">
+      <img  class="logoimg" src="{% static 'images/logo.png' %}" alt="logo">
+    </div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+      <li><a href="{% url 'about' %}">About Us</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Content -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: info@mywebsite.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: Hyderabad, India</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="#">🌐 Facebook</a><br>
+        <a href="#">🐦 Twitter</a><br>
+        <a href="#">📸 Instagram</a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="copyright">© 2025 Omshiva Digital Agency. All Rights Reserved.</p>
+  </footer>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+</html>
